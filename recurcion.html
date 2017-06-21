@@ -1,0 +1,22 @@
+<script type="text/javascript">
+	var num = prompt("ingrese el numero");
+	var numero = parseInt(num);
+	
+	
+	var result = factorial(numero);
+	//metodo aparte 
+	function factorial(num)
+{
+   	if(num == 0)
+   	{
+
+   		return 1;
+   	}
+   	else{
+   	
+        return (num * factorial(num - 1));
+   	}
+}
+
+document.write(result);
+</script>
